@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+:root{
+    --font-color-b: rgba(58, 58, 58, 1);
+    --btn-color: rgba(224, 44, 109, 1);
+    --font-color-t: rgba(24, 25, 31, 1);
+    --footer-bg-color: #0A0826 ;
+    --feature-fontP-color:rgba(108, 108, 108, 1);
+    --font-size-bt: 3.25rem;
+    --font-size-p: 1rem;
+    --font-size-t: 1.75rem;
+}
+/* Shared Styles */
+.text-center{
+    text-align: center;
+}
+main > section{
+    max-width: 1440px;
+    margin: 35px auto;
+}
+.tittle{
+    color: var(--font-color-t);
+    font-size: var(--font-size-t);
+    font-weight: 450;
+}
+.sub-tittle{
+    color: var(--font-color-b);
+    font-size: var(--font-size-t);
+    font-weight: 500;
+}
+.paragraph{
+    color: var(--font-color-t);
+    font-size: var(--font-size-p);
+    font-weight: 500;
+}
+/* Start main Style */
+
+header{
+    max-width: 1440px;
+    margin: 50px auto;
+}
+.logo{
+    color: var(--font-color-b);
+    font-size: var(--font-size-t);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--font-color-b);
+    font-size: var(--font-size-p);
+    font-weight: bold;
+}
