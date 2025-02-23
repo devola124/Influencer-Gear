@@ -23,6 +23,9 @@
     --font-size-t: 1.75rem;
 }
 /* Shared Styles */
+body{
+    background-color: whitesmoke;
+}
 .text-center{
     text-align: center;
 }
@@ -33,12 +36,12 @@ main > section{
 .tittle{
     color: var(--font-color-t);
     font-size: var(--font-size-t);
-    font-weight: 450;
+    font-weight: 500;
 }
 .sub-tittle{
     color: var(--font-color-b);
     font-size: var(--font-size-t);
-    font-weight: 500;
+    font-weight: 600;
 }
 .paragraph{
     color: var(--font-color-t);
@@ -72,4 +75,96 @@ nav ul li a{
     color: var(--font-color-b);
     font-size: var(--font-size-p);
     font-weight: bold;
+}
+/* Banner-Part */
+
+.bannerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background-image: url(./images/Circle\ design.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    padding: 80px 0px;
+}
+.banner-item{
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.banner-tittle{
+    font-size: var(--font-size-bt);
+    color: var(--font-color-b);
+    font-weight: 700;
+    line-height: 70px;
+}
+.btn-primary{
+    color: #fff;
+    background-color: var(--btn-color);
+    font-size: var(--font-size-p);
+    font-weight: 600;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+}
+
+/* Sponsors Part */
+
+.sponsors{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 2px 2.3px #ddd;
+    padding: 40px 0px;
+}
+
+/* Popular Section */
+.popular-collection .sub-tittle{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.popular-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    align-content: space-between;
+}
+.popular-items{
+    box-shadow: 0px 2px 2px 2.3px #ddd;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.popular-items img{
+    width: 100%;
+}
+.dollar-tittle{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--font-color-t);
+}
+.star-div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.star-div .star{
+    color: #FF9900;
+}
+.star-div h4{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--font-color-t);
+}
+.text p, h5{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--feature-fontP-color);
 }
