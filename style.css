@@ -127,6 +127,21 @@ nav ul li a{
     margin-top: 70px;
     margin-bottom: 30px;
 }
+.div{
+    margin-top: 30px;
+    text-align: center;
+}
+.div button{
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+}
+.div button a{
+    color: var(--btn-color);
+    text-decoration: none;
+}
+
 .popular-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
