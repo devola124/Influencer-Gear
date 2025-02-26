@@ -83,11 +83,13 @@ nav ul li a{
     justify-content: space-between;
     align-items: center;
     gap: 24px;
-    background-image: url(./images/Circle\ design.svg);
-    background-position: right center;
-    background-repeat: no-repeat;
-    /* background-size: contain; */
     padding: 80px 0px;
+}
+
+.bannerSection #div{
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-item{
     max-width: 580px;
@@ -118,11 +120,15 @@ main > section{
     margin: 50px auto;
 }
 .sponsors{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    align-content: center;
     box-shadow: 0px 2px 2px 2.3px #ddd;
     padding: 40px 0px;
+}
+.sponsors img{
+    width: 100%;
 }
 
 /* Popular Section */
@@ -188,8 +194,13 @@ main > section{
 
 /* features-section */
 
+.feature-section img{
+    width: 100%;
+}
+
 .feature-section{
     display: flex;
+    /* flex-direction: column; */
     align-items: center;
 }
 .features-content{
@@ -240,4 +251,111 @@ footer div{
 }
 footer div i{
     margin-right: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+/* For Responsive Design */
+
+.responsive-bar{
+    font-size: 1.4rem;
+    color: var(--font-color-t);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    
+    /*1... Header Part */
+    header{
+        margin: 0px auto;
+    }
+
+    .responsive-bar{
+        opacity: 1;
+        visibility: visible;
+    }
+    nav{
+        padding: 10px 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .logo{
+        font-size: 1.5rem;
+        display: block;
+}
+/*2.... Banner Section */
+.bannerSection{
+    flex-direction: column-reverse;
+    background-position: top center;
+    background-size: contain;
+    padding: 10px 20px;
+}
+.bannerSection img{
+    width: 300px;
+}
+.banner-tittle{
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 35px;
+}
+.banner-item{
+    padding: 0px 8px;
+}
+.banner-item p{
+    text-align: center;
+    font-size: 0.9rem;
+}
+.banner-item .banner-btn{
+    text-align: center;
+}
+
+
+/* 3....Sponsors Part */
+
+.sponsors{
+    grid-template-columns: repeat(3, 1fr);
+}
+.sponsors div{
+    text-align: center;
+}
+/* Popular Collection */
+
+.popular-content{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0px 20px;
+}
+
+/* Features Section */
+
+.feature-section{
+    flex-direction: column-reverse;
+    gap: 24px;
+    padding: 0px 20px;
+}
+.features-content{
+    width: 100%;
+    margin-left: 0px;
+}
+.features-tittle{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.features-content p{
+    text-align: center;
+    font-size: 0.9rem;
+}
+.features-content div{
+    text-align: center;
+}
+/* footer section */
+footer h3{
+    font-size: 1.2rem;
+}
+.footer p{
+    font-size: 0.9rem;
+}
 }
